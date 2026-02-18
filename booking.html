@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Place your order or inquiry for electrical stampings with Aarya Electrical Stamping.">
+<title>Place Order / Inquiry | Aarya Electrical Stamping</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.webp" type="image/png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP BAR SECTION -->
+<div class="top-bar">
+    <div class="tb-tagline">Quality in Every Stamping</div>
+    <div class="tb-logo">
+        <img src="Gemini_Generated_Image_d10lczd10lczd10l.png" alt="Aarya Electrical Stamping Logo">
+    </div>
+</div>
+
+<header>
+    <div class="logo">Aarya Electrical Stamping</div>
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+    <nav>
+        <ul id="nav-links">
+            <i class="fas fa-times menu-close-btn" onclick="toggleMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="booking.html">Inquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="booking-hero">
+        <div class="hero-content reveal">
+            <h1>Inquiry</h1>
+            <p>Place your order or request a quote.</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="booking-benefits reveal">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Quick Response</h3>
+                    <p>We respond to inquiries promptly.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Expert Consultation</h3>
+                    <p>Get advice on the best stamping solutions.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Quality Assurance</h3>
+                    <p>We ensure high quality in every order.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section reveal">
+        <div class="booking-wrapper">
+            <div class="booking-header">
+                <h2>Send Inquiry</h2>
+                <p>Fill in your details below to place an order or get a quote.</p>
+            </div>
+            <div class="booking-body">
+                <form id="booking-form" onsubmit="return validateBookingForm()">
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="service-type">Select Product/Service</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">--Please choose--</option>
+                                <option value="CRNO F type Transformer Lamination">CRNO F type Transformer Lamination (0.5mm)</option>
+                                <option value="Electrical Stamping">Electrical Stamping</option>
+                                <option value="CRNO Scrap">CRNO Scrap</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-date">Preferred Date</label>
+                            <input type="date" id="booking-date" name="booking-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Time Slot</label>
+                            <div class="time-slots">
+                                <input type="radio" id="slot1" name="time-slot" value="09:00-11:00" required><label for="slot1">09-11 AM</label>
+                                <input type="radio" id="slot2" name="time-slot" value="11:00-13:00"><label for="slot2">11-01 PM</label>
+                                <input type="radio" id="slot3" name="time-slot" value="14:00-16:00"><label for="slot3">02-04 PM</label>
+                                <input type="radio" id="slot4" name="time-slot" value="16:00-18:00"><label for="slot4">04-06 PM</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address</label>
+                            <textarea id="address" name="address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="reference-image">Upload Reference Image (Optional)</label>
+                            <input type="file" id="reference-image" name="reference-image" accept="image/*">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="footer-logo">Aarya Electrical Stamping</div>
+                <p>Manufacturer of high quality electrical stampings. Committed to precision and excellence.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919316432446"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="booking.html"><i class="fas fa-chevron-right"></i> Inquiry</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> CRNO F Type Lamination</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> CRNO Scrap</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-details">
+                    <li><i class="fas fa-map-marker-alt"></i> <span>190 Raghuveer Industrial Estate Phase 2, opp Vatva Railway Station, S.L.M mill Compound, Vatva, Ahmedabad, Gujarat 382445</span></li>
+                    <li><i class="fas fa-phone-alt"></i> <span>+91 9316432446</span></li>
+                    <li><i class="fas fa-envelope"></i> <span>pranav@aaryaelectricalstamping.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Aarya Electrical Stamping</strong>. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Success Popup -->
+<div id="success-popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3>Success!</h3>
+        <p>Your booking has been confirmed. We will contact you shortly.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
